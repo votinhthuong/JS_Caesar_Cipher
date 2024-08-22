@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.cipher-disks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.cipher-disks {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 2rem auto;
+}
+
+.disk {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.outer-disk {
+    background-color: #f0f0f0;
+    z-index: 1;
+}
+
+.inner-disk {
+    background-color: #e0e0e0;
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 15%;
+    z-index: 2;
+}
+
+.letter {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    user-select: none;
+}
+
+.inner-disk .letter {
+    transform-origin: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#shift-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.input-output {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#swap {
+    background-color: #2196F3;
+}
+
+#swap:hover {
+    background-color: #1E88E5;
+}
+
+.steps {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+}
+
+.step {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #e9e9e9;
+    border-radius: 3px;
+}
+
+.step:nth-child(even) {
+    background-color: #f0f0f0;
+}
